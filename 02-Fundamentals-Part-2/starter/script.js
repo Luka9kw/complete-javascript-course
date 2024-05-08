@@ -1,39 +1,72 @@
 'use scrict';
 
 
-const actualYear = new Date().getFullYear();
-const collegeAge = 18;
+/*
+const cutFruitPieces = fruit => fruit * 4;
 
+const fruitProcessor = (apples, oranges) => {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
 
-const collegeYear = function (name, birthYear) {
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces oranges`;
 
-    const age = actualYear - birthYear;
-
-    const collegeYear = birthYear + collegeAge;
-    const yrsUntilCollege = collegeYear - actualYear;
-
-    // Who will be born
-    if (birthYear > actualYear) {
-
-        const yrsUntilBirth = birthYear - actualYear;
-
-        const resultText = `There are ${yrsUntilBirth} years left until ${name}'s birthday. ${name} is going to college in ${collegeYear}, there are approximately ${yrsUntilCollege} years left.`;
-
-        return resultText;
-    }
-    // Who are born
-    else if (age <= 18) {
-        const resultText = `${name} is ${age} years old. ${name} is going to college in ${collegeYear}, there are approximately ${yrsUntilCollege} years left.`;
-        return resultText;
-    }
-    // Who are older then 18
-    else {
-        const resultText = `For the people who were born in ${birthYear}, the average year that they got in the college is ${collegeYear} year`
-        return resultText;
-    };
+    return juice;
 };
 
+console.log(fruitProcessor(3, 8)) */
+
+// Arrays
+
+const luka = {
+    firstName: 'Luka',
+    lastName: 'Cerqueira',
+    birthYear: 2001,
+    job: 'Freelancer and TI Technical Support',
+    girlfriend: 'Bincas',
+    hasDriverLicense: false,
+
+    calcAge: function () {
+        this.age = 2024 - this.birthYear
+        return this.age;
+
+    },
+
+    challengeTxt: function () {
+        const txt = `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he `
+
+        if (this.hasDriverLicense) {
+            const finalTxt = txt + `has driver's license`
+            return finalTxt
+        }
+
+        else {
+            const finalTxt = txt + `has no driver's license`
+            return finalTxt
+        }
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} drivers license.`
+    }
+
+    // calcAge: function () {
+    //     // console.log(this)
+    //     return 2024 - this.birthYear
+    // }
+};
+
+console.log(luka.challengeTxt())
+
+console.log(luka.getSummary())
+
+// console.log(luka.calcAge())
+
+// console.log(luka.age);
+// console.log(luka.age);
+// console.log(luka.calcAge());
+// console.log(luka.calcAge());
 
 
 
-console.log(collegeYear('Bincas', 2014));
+// console.log(luka['calcAge'])
+// console.log(luka['firstName'])
