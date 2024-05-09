@@ -16,8 +16,7 @@ const fruitProcessor = (apples, oranges) => {
 console.log(fruitProcessor(3, 8)) */
 
 // Arrays
-
-const luka = {
+/* const luka = {
     firstName: 'Luka',
     lastName: 'Cerqueira',
     birthYear: 2001,
@@ -48,25 +47,71 @@ const luka = {
     getSummary: function () {
         return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} drivers license.`
     }
+}; */
 
-    // calcAge: function () {
-    //     // console.log(this)
-    //     return 2024 - this.birthYear
-    // }
+
+// for LOOP
+
+
+/*
+let luka = ['luka', 'javascript', true, 23, ['bincas', 'sergio', 'igor']];
+
+const types = [];
+
+console.log('--- ONLY STRINGS ---')
+for (let i = 0; i < luka.length; i++) {
+    if (typeof luka[i] !== 'string') continue;
+
+    console.log(luka[i], typeof luka[i]);
 };
 
-console.log(luka.challengeTxt())
+console.log('--- BREAK WITH NUMBER ---')
+for (let i = 0; i < luka.length; i++) {
+    if (typeof luka[i] === 'number') break;
 
-console.log(luka.getSummary())
+    console.log(luka[i], typeof luka[i]);
+};
+*/
 
-// console.log(luka.calcAge())
+// backward loop and loops in loops
 
-// console.log(luka.age);
-// console.log(luka.age);
-// console.log(luka.calcAge());
-// console.log(luka.calcAge());
+// const luka = [
+//     'Luka',
+//     'Cerqueira',
+//     2037 - 1991,
+//     'TI Support and Designer from BUZZFUN',
+//     'for sure',
+//     true
+// ];
+
+// for (let i = luka.length - 1; i >= 0; i--) {
+//     console.log(i, luka[i])
+// };
 
 
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//     console.log(`---------- STARTING EXERCISE ${exercise}`)
 
-// console.log(luka['calcAge'])
-// console.log(luka['firstName'])
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Lifting weight repetition ${rep}`)
+
+//         for (let bingaboo = 1; bingaboo < 6; bingaboo++) {
+//             console.log(exercise)
+//         }
+//     };
+// };
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(10)
+//     rep++
+// };
+
+let dice = '';
+
+
+while (dice !== 6) {
+    console.log(dice)
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is abound to end.')
+}
