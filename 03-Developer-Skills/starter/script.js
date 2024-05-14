@@ -4,6 +4,9 @@
 // learning to think like a programmer
 
 const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const temperatures2 = ["falouu", 12];
+
+const mergedArr = temperatures.concat(temperatures2);
 
 const calcTempAmplitude = function (temps) {
   let max = temps[0];

@@ -62,6 +62,7 @@ for (let i = 0; i < luka.length; i++) {
     console.log(luka[i], typeof luka[i]);
 };
 
+<<<<<<< HEAD
 console.log('--- BREAK WITH NUMBER ---')
 for (let i = 0; i < luka.length; i++) {
     if (typeof luka[i] === 'number') break;
@@ -110,3 +111,8 @@ for (let i = 0; i < luka.length; i++) {
 //     dice = Math.trunc(Math.random() * 6) + 1;
 //     if (dice === 6) console.log('Loop is abound to end.')
 // }
+=======
+luka.location = "Brasil";
+luka['twitter'] = '@luka9kw';
+console.log(luka);
+>>>>>>> b3c11d9 (nem sei oq mudou)
