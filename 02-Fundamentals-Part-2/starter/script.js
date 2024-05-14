@@ -1,5 +1,4 @@
-'use scrict';
-
+"use scrict";
 
 /*
 const cutFruitPieces = fruit => fruit * 4;
@@ -49,9 +48,7 @@ console.log(fruitProcessor(3, 8)) */
     }
 }; */
 
-
 // for LOOP
-
 
 /*
 let luka = ['luka', 'javascript', true, 23, ['bincas', 'sergio', 'igor']];
@@ -88,7 +85,6 @@ for (let i = 0; i < luka.length; i++) {
 //     console.log(i, luka[i])
 // };
 
-
 // for (let exercise = 1; exercise <= 3; exercise++) {
 //     console.log(`---------- STARTING EXERCISE ${exercise}`)
 
@@ -107,11 +103,10 @@ for (let i = 0; i < luka.length; i++) {
 //     rep++
 // };
 
-let dice = '';
+// let dice = '';
 
-
-while (dice !== 6) {
-    console.log(dice)
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log('Loop is abound to end.')
-}
+// while (dice !== 6) {
+//     console.log(dice)
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is abound to end.')
+// }
