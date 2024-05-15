@@ -3,12 +3,9 @@
 
 // learning to think like a programmer
 
-const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
-const temperatures2 = ["falouu", 12];
-
-const mergedArr = temperatures.concat(temperatures2);
-
-const calcTempAmplitude = function (temps) {
+/* const calcTempAmplitude = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
   let max = temps[0];
   let min = temps[0];
 
@@ -23,6 +20,22 @@ const calcTempAmplitude = function (temps) {
   return max - min;
 };
 
-const amplitude = calcTempAmplitude(temperatures);
+const amplitude = calcTempAmplitude([1, 122, 3], [3, -15, 1]);
+console.log(amplitude); */
 
-console.log(amplitude);
+// Fixing Bugs
+
+const measureKelvin = function () {
+  const measurement = {
+    type: "temperature",
+    unit: "celsius",
+    value: Number(prompt("Degrees celsius")),
+  };
+  // console.warn(measurement.value);
+  // console.er133ror(measurement.value);
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+
+console.log(measureKelvin());
